@@ -1,0 +1,394 @@
+/*============== Hua Zilly ===================
+Dzai co chi nà sai;
+================ Contents Css=================
+    1, Header
+    2, Drop Down-menu
+    3, Banner
+    4, Wave
+    5, Respon
+    6, Carosel
+*/
+
+*{
+    padding:0;
+}
+body{
+    width: 100%;
+    clear: both;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;;
+}
+a:hover{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;;
+}
+ul ,li{
+    margin: 0 auto;
+    list-style-type: none;
+}
+/*=============== Css Only Screen has Min-width:1024px ==============*/
+
+@media screen and (min-width:1024px){
+
+/*======================Start Css==================================*/
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding:0;
+}
+.header{
+    width: 100%;
+    position: relative;
+    background-image:linear-gradient(to right ,#4787da,#007cba);
+   
+}
+.header .header__ctn{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+.header .header__ctn .header__ctn-logo{
+    font-size: 20px;
+   padding:20px 0 0;
+    cursor: pointer;
+}
+.header .header__ctn .header__ctn-menu{
+    margin: 0 auto;
+    flex-basis: 60%;
+ 
+}
+.header__ctn .header__ctn-menu .ctn__menu-item{
+    display: flex;
+    margin: 0 auto;
+}
+.header__ctn-menu .ctn__menu-item .menu__item{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+/*=========  Link Social =========*/
+.header__ctn .ctn__menu-link{
+    display:flex;
+}
+.ctn__menu-link .link__social-icon{
+    display: block;
+    padding: 20px 10px;
+}
+.un-menu{
+    color: #fff;
+    font-weight: 700;
+}
+/*=================  2,Drop Menu ===============*/
+.menu__drop{
+    width:85%;
+    height: 100%;
+}
+.menu__drop .menu__drop-ctn{
+    width: 100%;
+    background-color: #1b1d1f;;
+    margin: 0 auto;
+    display: flex;
+}
+/*=================== Items of menu ===================*/
+.drop__down-itemFirst{
+    padding:10px 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+    color: #fff;
+    font-size: 12px;
+}
+.menu__drop .menu__hidden {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    max-height: 0px;
+    visibility: hidden;
+}
+.menu__hidden .drop__ctn {
+    border-right: 1px solid rgb(126, 119, 119);
+    width: 95%;
+    margin: 0 auto;
+}
+
+.menu__hidden .drop__ctn .drop__down-item{
+    color:white;
+    padding:8px 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.menu__hidden .drop__ctn .drop__down-item:hover{
+    background: #666869 ;
+    color: #b6b8b9;
+}
+/* .menu__item:hover + .menu__drop{
+    transition-duration: 0.5s;
+    opacity: 1;
+    max-height: 200px;
+} */
+/*=============== Toggle of Menu ==============*/
+.menu__hidden.is-toggle{
+    right: 0;
+    left: 0;
+    background: #434444 ;
+    padding:20px 0;
+    max-height:80%;
+    transition-duration: 0.5s;
+    position: absolute;
+    z-index: 2;
+    visibility: visible;
+}
+/*=====================  3,Banner====================*/
+.banner{
+    position: relative;
+    width: 100%;
+    color: #fff;
+    background-image:linear-gradient(to right ,#4787da,#007cba);
+}
+.banner__ctn{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    padding: 60px 0;
+}
+.ctn__images {
+    width: 100%;
+}
+.ctn__images .banner__img{
+    width:90%;
+}
+.banner__ctn .banner__ctn-left{
+
+}
+.banner__ctn .banner__ctn-left .ctn__title{
+    margin: 40px 0 0;
+}
+.banner__ctn .banner__ctn-left .title{
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+.banner__ctn .banner__ctn-left .ctn__left-ctn{
+    position: relative;
+    top: 60px;
+}
+.banner__ctn .banner__ctn-left .ctn__title-under{
+    font-weight: 500;
+    font-size: 1.2rem;
+    width: 85%;
+}
+/*=============== Button Under banner ===========*/
+.banner__ctn-button{
+    display:flex;
+    margin: 0 auto;
+    padding:30px 0;
+  
+}
+.button__right-link, .button__left-link{
+    color:#fff;
+    font-weight: 700;
+    font-size:15px;
+    padding:20px 50px;
+    display:block;
+    border-radius: 5px;
+    transform-origin: right;
+    transition-delay: 0.5s;
+    transition: 0.5s;
+}
+.button__right-link{
+    background-color: #fff;
+    color:black;
+}
+.button__right-link:hover{
+    transition-duration: 0.5s;
+    background-color: transparent;
+    border:1px solid #fff;
+    color:#fff;
+}
+.button__left-link{
+    background-color: #e9168c;
+}
+.button__left-link:hover{
+    background-color: #c93488;
+}
+.ctn__button-right{
+    padding-left:20px;
+}
+/*==================== 4, Wave ==============*/
+.wave{
+    position: absolute;
+    width: 100%;
+    height:400px;
+    display: block;
+    bottom:0;
+}
+/*==================== 5, Respon ==============*/
+.respon{
+    width: 100%;
+}
+.respon .respon__ctn{
+    width:85%;
+    margin:0 auto;
+    display: flex;
+}
+.row__cate{
+    width: 100%;
+    /* padding-left:30px; */
+}
+.cate__stack{
+    color:#e9168c;
+}
+.fas{
+   font-size:60px;
+}
+.cate__name{
+    font-size: 25px;
+    font-weight: 700;
+    padding:30px 0;
+}
+.cate__des{
+    font-size:15px;
+    color:#777;
+    line-height: 1.75;
+    width:80%;
+}
+/*============= 7, Carosel ============*/
+ /* show 3 items */
+ .carousel-inner .active,
+ .carousel-inner .active + .carousel-item,
+ .carousel-inner .active + .carousel-item + .carousel-item,
+ .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+     display: block;
+ }
+ /*================== wave of carosel ===========================*/
+ 
+ .wave2{
+     position: absolute;
+     color: black;
+     width:100%;
+     height:400px;
+     z-index:-2;
+     top:35px;
+     overflow-x:hidden;
+ }
+ .wave2 path{
+    fill:black;
+    overflow-x:hidden;
+   
+ }
+ /*====================Custom Css of Bootstrap ==============*/
+ .container-fluid{
+    width: 100%;
+    position: relative;
+    padding:0;
+}
+.carousel{
+    padding:300px 0 200px;
+}
+ .carousel-item{
+     margin-right: 0;
+ }
+ .img-fluid{
+     width:80%;
+     border-radius:10px;
+ }
+ /*================ Back Ground Footer SVG =============*/
+ .bg__svg{
+     background-color: black;
+     position: absolute;
+     z-index: -2;
+     bottom:50px;
+     height:500px;
+     width:100% ;
+ }
+/*================= Dot of Carousel =============== */
+.carousel-indicators{
+    /* display: block; */
+    position: relative;
+    top:70px;
+}
+ .carousel-indicators li {
+    width: 10px;
+   height: 10px;
+   border-radius: 100%;
+   background-color: #b6b8b9;
+   z-index: 2;
+ }
+ /*=====================End Custom ================*/
+ .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+ .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+ .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+ .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+     transition: none;
+ }
+ 
+ .carousel-inner .carousel-item-next,
+ .carousel-inner .carousel-item-prev {
+   position: relative;
+   transform: translate3d(0, 0, 0);
+ }
+ 
+ .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+     position: absolute;
+     top: 0;
+     right: -25%;
+     z-index: -1;
+     display: block;
+     visibility: visible;
+ }
+ 
+ /* left or forward direction */
+ .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+ .carousel-item-next.carousel-item-left + .carousel-item,
+ .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+ .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+ .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+     position: relative;
+     transform: translate3d(-100%, 0, 0);
+     visibility: visible;
+ }
+ 
+ /* farthest right hidden item must be abso position for animations */
+ .carousel-inner .carousel-item-prev.carousel-item-right {
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1;
+     display: block;
+     visibility: visible;
+ }
+ 
+ /* right or prev direction */
+ .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+ .carousel-item-prev.carousel-item-right + .carousel-item,
+ .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+ .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+ .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+     position: relative;
+     transform: translate3d(100%, 0, 0);
+     visibility: visible;
+     display: block;
+     visibility: visible;
+ }
+
+
+
+/* Bootstrap Lightbox using Modal */
+
+#profile-grid { overflow: auto; white-space: normal; } 
+#profile-grid .profile { padding-bottom: 40px; }
+#profile-grid .panel { padding: 0 }
+#profile-grid .panel-body { padding: 15px }
+#profile-grid .profile-name { font-weight: bold; }
+#profile-grid .thumbnail {margin-bottom:6px;}
+#profile-grid .panel-thumbnail { overflow: hidden; }
+#profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
+/*============= End Carosel ============*/
+}
